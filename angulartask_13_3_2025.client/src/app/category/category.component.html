@@ -1,0 +1,12 @@
+<p>category works!</p>
+<div>
+  <h1>Categories</h1>
+  <ul>
+    <li *ngFor="let category of categories">
+      {{ category.name }}
+    </li>
+  </ul>
+  <div *ngIf="errorMessage">
+    <p>Error: {{ errorMessage }}</p>
+  </div>
+</div>
