@@ -5,7 +5,9 @@
     <li *ngFor="let category of categories">
       {{ category.name }}
     </li>
+    <li><a routerLink="/product/{{catagory.id}}">see product</a></li>
   </ul>
+  
   <div *ngIf="errorMessage">
     <p>Error: {{ errorMessage }}</p>
   </div>
